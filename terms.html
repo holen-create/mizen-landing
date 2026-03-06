@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditions d'utilisation — MiZen</title>
+  <meta name="description" content="Conditions générales d'utilisation de MiZen, l'application iPhone de suivi personnel des migraines.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mizen-health.app/terms">
+  <meta name="theme-color" content="#0F1724">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0F1724;
+      --bg-card: #1A2332;
+      --bg-secondary: #243044;
+      --turquoise: #6ECCC8;
+      --turquoise-glow: rgba(110, 204, 200, 0.15);
+      --coral: #F08C6A;
+      --text-primary: #F0EDE8;
+      --text-secondary: #8B95A8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      padding: 1rem 2rem;
+      background: rgba(15, 23, 36, 0.85);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(110, 204, 200, 0.1);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo {
+      font-size: 1.5rem; font-weight: 700; color: var(--turquoise);
+      text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-cta {
+      background: var(--coral); color: white; padding: 0.6rem 1.4rem;
+      border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(240, 140, 106, 0.3);
+    }
+
+    /* CONTENT */
+    .legal-container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 7rem 2rem 4rem;
+    }
+
+    .legal-header {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(110, 204, 200, 0.12);
+    }
+    .legal-header h1 {
+      font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--turquoise), #A8E6CF);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .legal-header .meta {
+      color: var(--text-secondary); font-size: 0.9rem;
+    }
+
+    .legal-tldr {
+      background: var(--bg-card);
+      border: 1px solid rgba(110, 204, 200, 0.15);
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .legal-tldr strong {
+      color: var(--turquoise); font-size: 0.85rem; text-transform: uppercase;
+      letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;
+    }
+    .legal-tldr p {
+      color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 1.25rem; font-weight: 600; margin: 2.5rem 0 1rem;
+      color: var(--text-primary);
+    }
+    h2 .num {
+      color: var(--turquoise); margin-right: 0.4rem;
+    }
+
+    h3 {
+      font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.6rem;
+      color: var(--text-primary);
+    }
+
+    p, li {
+      color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.8rem;
+    }
+    ul {
+      padding-left: 1.5rem; margin-bottom: 1rem;
+    }
+    li { margin-bottom: 0.4rem; }
+
+    .highlight-box {
+      background: var(--bg-secondary);
+      border-left: 3px solid var(--turquoise);
+      padding: 1rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.2rem 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    .warning-box {
+      background: rgba(240, 140, 106, 0.08);
+      border-left: 3px solid var(--coral);
+      padding: 1rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.2rem 0;
+    }
+    .warning-box p { margin-bottom: 0; }
+    .warning-box strong { color: var(--coral); }
+
+    a { color: var(--turquoise); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    table {
+      width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem;
+      font-size: 0.92rem;
+    }
+    th, td {
+      padding: 0.8rem 1rem; text-align: left;
+      border-bottom: 1px solid rgba(110, 204, 200, 0.08);
+    }
+    th {
+      color: var(--turquoise); font-weight: 600; font-size: 0.85rem;
+      text-transform: uppercase; letter-spacing: 0.03em;
+    }
+    td { color: var(--text-secondary); }
+
+    /* FOOTER */
+    footer {
+      text-align: center; padding: 3rem 2rem; margin-top: 3rem;
+      border-top: 1px solid rgba(110, 204, 200, 0.08);
+    }
+    .footer-logo { font-size: 1.3rem; font-weight: 700; color: var(--turquoise); margin-bottom: 1rem; }
+    .footer-links { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; }
+    .footer-links a:hover { color: var(--turquoise); }
+    .footer-copyright { color: var(--text-secondary); font-size: 0.8rem; opacity: 0.7; }
+
+    @media (max-width: 640px) {
+      .legal-container { padding: 6rem 1.2rem 3rem; }
+      .legal-header h1 { font-size: 1.6rem; }
+      .legal-tldr { padding: 1.2rem 1.4rem; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 0.6rem 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">MiZen</a>
+    <a href="index.html#download" class="nav-cta">Télécharger</a>
+  </nav>
+
+  <main class="legal-container">
+    <div class="legal-header">
+      <h1>Conditions d'utilisation</h1>
+      <p class="meta">Dernière mise à jour : mars 2026 &middot; Application MiZen &middot; Éditeur : Holen Apps (SAS Holen)</p>
+    </div>
+
+    <div class="legal-tldr">
+      <strong>L'essentiel</strong>
+      <p>MiZen est un journal personnel de suivi des migraines. Ce n'est pas un dispositif médical. L'app ne fournit aucun diagnostic ni recommandation thérapeutique. Consulte toujours un professionnel de santé pour toute décision médicale.</p>
+    </div>
+
+    <!-- 1 -->
+    <h2><span class="num">1.</span> Objet</h2>
+    <p>Les présentes conditions générales d'utilisation (« CGU ») régissent l'accès et l'utilisation de l'application mobile MiZen (« l'Application »), éditée par la SAS Holen, sous le nom commercial Holen Apps.</p>
+    <p>En téléchargeant ou en utilisant MiZen, tu acceptes les présentes CGU dans leur intégralité. Si tu ne les acceptes pas, merci de ne pas utiliser l'Application.</p>
+
+    <!-- 2 -->
+    <h2><span class="num">2.</span> Nature de l'Application — Avertissement médical</h2>
+    <div class="warning-box">
+      <p><strong>Important :</strong> MiZen est un journal personnel de suivi. Ce n'est <strong>pas</strong> un dispositif médical au sens du règlement européen (UE) 2017/745. L'Application ne fournit aucun diagnostic, aucune recommandation thérapeutique, aucune prescription médicale.</p>
+    </div>
+    <p>MiZen est un outil d'enregistrement et de visualisation de tes données de migraine. Son rôle est de t'aider à mieux comprendre la fréquence et les circonstances de tes crises, et de faciliter le dialogue avec ton médecin.</p>
+    <p>L'Application ne se substitue en aucun cas à une consultation médicale. Toute décision relative à ta santé doit être prise en concertation avec un professionnel de santé qualifié.</p>
+
+    <h3>Informations fournies par l'Application</h3>
+    <p>Pour éviter toute ambiguïté sur la nature des informations affichées :</p>
+    <ul>
+      <li><strong style="color:var(--text-primary)">Alertes médicaments</strong> — l'Application comptabilise tes jours de prise et t'informe lorsqu'un repère de fréquence est dépassé (par exemple : « X jours de prise, soit plus que le repère de Y jours/mois »). Ces repères sont des indications courantes et non des prescriptions individualisées. L'app t'invite toujours à en parler à ton médecin.</li>
+      <li><strong style="color:var(--text-primary)">Alertes pression atmosphérique</strong> — l'Application constate des variations de pression (par exemple : « La pression atmosphérique a nettement baissé dans ta zone »). C'est une information météorologique, pas une prédiction médicale.</li>
+      <li><strong style="color:var(--text-primary)">Score MIDAS</strong> — questionnaire d'auto-évaluation validé en neurologie. L'app calcule un score et indique un niveau d'impact. L'interprétation clinique relève de ton médecin.</li>
+      <li><strong style="color:var(--text-primary)">Rapport PDF</strong> — le pied de page de chaque rapport généré précise : « Ce rapport ne constitue pas un diagnostic médical. »</li>
+    </ul>
+
+    <!-- 3 -->
+    <h2><span class="num">3.</span> Accès à l'Application</h2>
+    <p>MiZen est disponible sur l'App Store d'Apple pour les appareils iPhone compatibles. L'Application est actuellement disponible en langue française.</p>
+    <p>L'utilisation de MiZen nécessite un appareil compatible et un système d'exploitation iOS à jour. Holen Apps ne garantit pas la compatibilité avec l'ensemble des appareils et versions d'iOS.</p>
+
+    <!-- 4 -->
+    <h2><span class="num">4.</span> Utilisation par les mineurs</h2>
+    <p>MiZen n'est pas destinée aux personnes de moins de 16 ans. Si tu as entre 16 et 18 ans, l'utilisation de l'Application est soumise à l'accord préalable de tes parents ou de ton représentant légal.</p>
+
+    <!-- 5 -->
+    <h2><span class="num">5.</span> Abonnement Premium</h2>
+    <p>MiZen fonctionne selon un modèle freemium. Certaines fonctionnalités sont accessibles gratuitement, d'autres nécessitent un abonnement Premium.</p>
+
+    <h3>Fonctionnalités gratuites (sans limitation de durée)</h3>
+    <ul>
+      <li>Saisie des crises de migraine</li>
+      <li>Tableau de bord mensuel (fréquence, sévérité, calendrier, déclencheurs)</li>
+      <li>Suivi des médicaments avec alertes de dépassement de repères</li>
+      <li>Questionnaire MIDAS (score ponctuel)</li>
+    </ul>
+
+    <h3>Fonctionnalités Premium</h3>
+    <ul>
+      <li>Export PDF de l'historique complet</li>
+      <li>Alertes pression atmosphérique personnalisées</li>
+      <li>Évolution du score MIDAS dans le temps</li>
+      <li>Widget « Jours sans migraine » sur l'écran d'accueil</li>
+    </ul>
+
+    <h3>Tarifs et conditions d'abonnement</h3>
+    <table>
+      <thead>
+        <tr><th>Formule</th><th>Tarif</th><th>Essai gratuit</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mensuel</td><td>2,99 €/mois</td><td>—</td></tr>
+        <tr><td>Annuel</td><td>19,99 €/an</td><td>7 jours</td></tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box">
+      <p><strong style="color:var(--text-primary)">Renouvellement automatique :</strong> l'abonnement se renouvelle automatiquement à la fin de chaque période, sauf annulation de ta part au moins 24 heures avant la date de renouvellement. Le montant est débité sur ton compte App Store.</p>
+    </div>
+
+    <p>Tu peux gérer ou annuler ton abonnement à tout moment depuis <strong style="color:var(--text-primary)">Réglages → ton identifiant Apple → Abonnements</strong> sur ton iPhone.</p>
+    <p>Les paiements sont traités exclusivement par Apple via l'App Store. Holen Apps ne collecte aucune donnée de paiement. Les conditions de remboursement sont régies par la <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">politique de l'App Store</a>.</p>
+
+    <!-- 6 -->
+    <h2><span class="num">6.</span> Données et vie privée</h2>
+    <p>Le traitement de tes données est décrit dans notre <a href="/privacy">Politique de confidentialité</a>. En résumé : toutes tes données restent sur ton appareil et dans ton iCloud privé. Holen Apps ne collecte, ne stocke et ne transmet aucune donnée personnelle.</p>
+
+    <!-- 7 -->
+    <h2><span class="num">7.</span> Propriété intellectuelle</h2>
+    <p>L'Application MiZen, son code source, son design (palette « Cocon »), sa mascotte Kuu (et ses 5 états : serene, attentive, worried, protective, encouraging), ses contenus textuels et visuels sont la propriété exclusive de la SAS Holen.</p>
+    <p>Le nom « MiZen » est utilisé comme marque commerciale par Holen Apps.</p>
+    <p>Toute reproduction, modification, distribution ou utilisation non autorisée de tout ou partie de l'Application est interdite et constitue une contrefaçon au sens des articles L.335-2 et suivants du Code de la propriété intellectuelle.</p>
+
+    <!-- 8 -->
+    <h2><span class="num">8.</span> Limitation de responsabilité</h2>
+
+    <h3>Non-responsabilité médicale</h3>
+    <p>MiZen ne remplace en aucun cas un avis médical professionnel. Les informations affichées dans l'Application (alertes, scores, statistiques) sont fournies à titre indicatif et ne constituent ni un diagnostic, ni un traitement, ni une prescription. Tu dois consulter un professionnel de santé pour toute décision relative à ta santé.</p>
+
+    <h3>Exactitude des données</h3>
+    <p>Les données affichées dans MiZen dépendent de ta saisie et des capteurs de ton appareil. Les mesures de pression atmosphérique proviennent du capteur barométrique de l'iPhone et du service WeatherKit d'Apple. Holen Apps ne garantit pas l'exactitude de ces mesures.</p>
+
+    <h3>Repères de fréquence des médicaments</h3>
+    <p>Les seuils d'alerte affichés dans l'Application (par exemple : 10 jours par mois pour les triptans, 15 jours par mois pour les antalgiques) sont des repères courants issus de la littérature médicale. Ils ne constituent pas des prescriptions individualisées et ne se substituent pas à l'avis de ton médecin.</p>
+
+    <h3>Perte de données</h3>
+    <p>Holen Apps ne peut être tenue responsable de la perte de données liée à un dysfonctionnement de ton appareil, du service iCloud, ou à la désinstallation de l'Application. Nous t'encourageons à maintenir la synchronisation iCloud active pour disposer d'une sauvegarde.</p>
+
+    <h3>Export PDF</h3>
+    <p>Le rapport PDF est généré localement sur ton appareil. Tu es seul(e) responsable de l'utilisation et de la diffusion de ce document. Holen Apps n'a aucun accès à son contenu.</p>
+
+    <h3>Limitation générale</h3>
+    <p>Dans les limites autorisées par la loi, la responsabilité d'Holen Apps au titre de l'utilisation de l'Application est limitée aux dommages directs et prévisibles, et ne saurait excéder le montant total des abonnements versés par l'utilisateur au cours des 12 mois précédant le fait générateur.</p>
+    <p>Holen Apps ne saurait être tenue responsable des dommages indirects, notamment perte de données, perte de chance, préjudice moral, ou manque à gagner.</p>
+
+    <!-- 9 -->
+    <h2><span class="num">9.</span> Obligations de l'utilisateur</h2>
+    <p>En utilisant MiZen, tu t'engages à :</p>
+    <ul>
+      <li>Utiliser l'Application conformément à sa destination (journal personnel de suivi des migraines).</li>
+      <li>Ne pas tenter de décompiler, désassembler ou procéder à l'ingénierie inverse de l'Application.</li>
+      <li>Ne pas utiliser l'Application à des fins illicites ou contraires aux présentes CGU.</li>
+      <li>Ne pas diffuser le rapport PDF à des fins commerciales ou dans un contexte susceptible de porter atteinte à l'image de MiZen ou d'Holen Apps.</li>
+    </ul>
+
+    <!-- 10 -->
+    <h2><span class="num">10.</span> Disponibilité de l'Application</h2>
+    <p>Holen Apps s'efforce de maintenir l'Application accessible et fonctionnelle. Toutefois, l'accès à MiZen peut être temporairement interrompu pour des raisons de maintenance, de mise à jour, ou pour toute autre raison technique.</p>
+    <p>Holen Apps se réserve le droit de modifier, suspendre ou interrompre tout ou partie de l'Application à tout moment, sans préavis ni indemnité. En cas d'arrêt définitif de l'Application, Holen Apps s'efforcera d'en informer les utilisateurs dans un délai raisonnable.</p>
+
+    <!-- 11 -->
+    <h2><span class="num">11.</span> Modification des CGU</h2>
+    <p>Holen Apps se réserve le droit de modifier les présentes CGU à tout moment. Les CGU modifiées entrent en vigueur dès leur publication sur le site web et dans l'Application. En cas de modification substantielle, un avis sera affiché dans l'Application.</p>
+    <p>La poursuite de l'utilisation de l'Application après publication des CGU modifiées vaut acceptation des nouvelles conditions.</p>
+
+    <!-- 12 -->
+    <h2><span class="num">12.</span> Droit applicable et juridiction</h2>
+    <p>Les présentes CGU sont régies par le droit français.</p>
+    <p>En cas de litige, une solution amiable sera recherchée en priorité. À défaut, les tribunaux compétents seront ceux de Paris, sous réserve des dispositions impératives du Code de la consommation permettant au consommateur de saisir le tribunal de son domicile.</p>
+    <p>Conformément aux articles L.611-1 et suivants du Code de la consommation, tu peux recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable de tout litige. Pour en savoir plus, rends-toi sur <a href="https://www.economie.gouv.fr/mediation-conso" target="_blank" rel="noopener">economie.gouv.fr/mediation-conso</a>.</p>
+
+    <!-- 13 -->
+    <h2><span class="num">13.</span> Conditions Apple</h2>
+    <p>L'utilisation de MiZen est également soumise aux <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Conditions d'utilisation de l'App Store</a>. En cas de conflit entre les présentes CGU et les conditions Apple, les conditions Apple prévalent dans les limites de leur champ d'application.</p>
+    <p>Apple n'est pas partie aux présentes CGU et n'assume aucune obligation relative à l'Application, à son contenu ou à sa maintenance.</p>
+
+    <!-- 14 -->
+    <h2><span class="num">14.</span> Contact</h2>
+    <p>Pour toute question relative aux présentes conditions :</p>
+    <ul>
+      <li>Email : <a href="mailto:contact@holenholding.com">contact@holenholding.com</a></li>
+      <li>Éditeur : SAS Holen (Holen Apps)</li>
+      <li>Site web : <a href="https://mizen-health.app">mizen-health.app</a></li>
+    </ul>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">MiZen</div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="mailto:contact@holenholding.com">Contact</a>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">CGU</a>
+    </div>
+    <p class="footer-copyright">&copy; 2026 Holen Apps (SAS Holen). Fait avec amour en France.</p>
+  </footer>
+
+</body>
+</html>

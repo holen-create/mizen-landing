@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — MiZen</title>
+  <meta name="description" content="Politique de confidentialité de MiZen, l'application iPhone de suivi des migraines. Zéro serveur, zéro collecte, 100% privé.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mizen-health.app/privacy">
+  <meta name="theme-color" content="#0F1724">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0F1724;
+      --bg-card: #1A2332;
+      --bg-secondary: #243044;
+      --turquoise: #6ECCC8;
+      --turquoise-glow: rgba(110, 204, 200, 0.15);
+      --coral: #F08C6A;
+      --text-primary: #F0EDE8;
+      --text-secondary: #8B95A8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      padding: 1rem 2rem;
+      background: rgba(15, 23, 36, 0.85);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(110, 204, 200, 0.1);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo {
+      font-size: 1.5rem; font-weight: 700; color: var(--turquoise);
+      text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-cta {
+      background: var(--coral); color: white; padding: 0.6rem 1.4rem;
+      border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(240, 140, 106, 0.3);
+    }
+
+    /* CONTENT */
+    .legal-container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 7rem 2rem 4rem;
+    }
+
+    .legal-header {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(110, 204, 200, 0.12);
+    }
+    .legal-header h1 {
+      font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--turquoise), #A8E6CF);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .legal-header .meta {
+      color: var(--text-secondary); font-size: 0.9rem;
+    }
+
+    .legal-tldr {
+      background: var(--bg-card);
+      border: 1px solid rgba(110, 204, 200, 0.15);
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .legal-tldr strong {
+      color: var(--turquoise); font-size: 0.85rem; text-transform: uppercase;
+      letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;
+    }
+    .legal-tldr p {
+      color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 1.25rem; font-weight: 600; margin: 2.5rem 0 1rem;
+      color: var(--text-primary);
+    }
+    h2 .num {
+      color: var(--turquoise); margin-right: 0.4rem;
+    }
+
+    p, li {
+      color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.8rem;
+    }
+    ul {
+      padding-left: 1.5rem; margin-bottom: 1rem;
+    }
+    li { margin-bottom: 0.4rem; }
+
+    .highlight-box {
+      background: var(--bg-secondary);
+      border-left: 3px solid var(--turquoise);
+      padding: 1rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.2rem 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    a { color: var(--turquoise); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      text-align: center; padding: 3rem 2rem; margin-top: 3rem;
+      border-top: 1px solid rgba(110, 204, 200, 0.08);
+    }
+    .footer-logo { font-size: 1.3rem; font-weight: 700; color: var(--turquoise); margin-bottom: 1rem; }
+    .footer-links { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; }
+    .footer-links a:hover { color: var(--turquoise); }
+    .footer-copyright { color: var(--text-secondary); font-size: 0.8rem; opacity: 0.7; }
+
+    @media (max-width: 640px) {
+      .legal-container { padding: 6rem 1.2rem 3rem; }
+      .legal-header h1 { font-size: 1.6rem; }
+      .legal-tldr { padding: 1.2rem 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">MiZen</a>
+    <a href="index.html#download" class="nav-cta">Télécharger</a>
+  </nav>
+
+  <main class="legal-container">
+    <div class="legal-header">
+      <h1>Politique de confidentialité</h1>
+      <p class="meta">Dernière mise à jour : mars 2026 &middot; Application MiZen &middot; Éditeur : Holen Apps (SAS Holen)</p>
+    </div>
+
+    <div class="legal-tldr">
+      <strong>L'essentiel</strong>
+      <p>MiZen n'a aucun serveur. Toutes tes données restent sur ton iPhone et dans ton iCloud privé. Holen Apps ne collecte, ne stocke et ne transmet aucune donnée personnelle. Zéro analytics, zéro pub, zéro pistage.</p>
+    </div>
+
+    <!-- 1 -->
+    <h2><span class="num">1.</span> Qui sommes-nous ?</h2>
+    <p>MiZen est éditée par <strong style="color:var(--text-primary)">Holen Apps</strong>, nom commercial de la SAS Holen, société de droit français.</p>
+    <ul>
+      <li>Email de contact : <a href="mailto:contact@holenholding.com">contact@holenholding.com</a></li>
+      <li>Site web : <a href="https://mizen-health.app">mizen-health.app</a></li>
+    </ul>
+
+    <!-- 2 -->
+    <h2><span class="num">2.</span> Notre philosophie : zéro serveur, zéro collecte</h2>
+    <p>L'architecture de MiZen a été conçue dès l'origine pour qu'aucune donnée utilisateur ne transite par un serveur d'Holen Apps. Concrètement :</p>
+    <ul>
+      <li><strong style="color:var(--text-primary)">Stockage local uniquement</strong> — tes données sont enregistrées sur ton iPhone via SwiftData (base de données native Apple).</li>
+      <li><strong style="color:var(--text-primary)">Synchronisation iCloud privé</strong> — si iCloud est activé sur ton appareil, tes données se synchronisent via CloudKit (Apple) dans ton conteneur iCloud personnel. Holen Apps n'a aucun accès à ce conteneur.</li>
+      <li><strong style="color:var(--text-primary)">Aucun serveur Holen Apps</strong> — pas de base de données distante, pas d'API, pas d'analytics, pas de service de notification push externe.</li>
+      <li><strong style="color:var(--text-primary)">Notifications locales</strong> — les rappels et alertes sont gérés entièrement par iOS sur ton appareil, sans service tiers (pas de Firebase, pas de OneSignal).</li>
+      <li><strong style="color:var(--text-primary)">Achats in-app</strong> — gérés exclusivement par Apple via StoreKit 2. Holen Apps ne collecte aucune donnée de paiement.</li>
+    </ul>
+    <div class="highlight-box">
+      <p>Cette architecture signifie qu'Holen Apps n'est pas soumise à l'obligation de certification HDS (Hébergement de Données de Santé) en France, puisqu'elle n'héberge aucune donnée de santé. Par ailleurs, MiZen ne réalise aucun diagnostic, aucune prédiction médicale et ne formule aucune recommandation thérapeutique.</p>
+    </div>
+
+    <!-- 3 -->
+    <h2><span class="num">3.</span> Données traitées localement sur ton appareil</h2>
+    <p>MiZen stocke les informations suivantes <strong style="color:var(--text-primary)">uniquement sur ton iPhone</strong> (et dans ton iCloud privé si activé) :</p>
+    <ul>
+      <li><strong style="color:var(--text-primary)">Prénom</strong> (facultatif) — saisi lors de l'accueil, utilisé pour personnaliser l'interface.</li>
+      <li><strong style="color:var(--text-primary)">Crises de migraine</strong> — date et heure de début/fin, sévérité (3 niveaux), facteurs déclencheurs, symptômes, localisation de la douleur, notes libres.</li>
+      <li><strong style="color:var(--text-primary)">Médicaments</strong> — nom, type (ponctuel ou régulier), dosage, repères personnels de fréquence, historique des prises horodatées.</li>
+      <li><strong style="color:var(--text-primary)">Pression atmosphérique</strong> — lectures du capteur barométrique de l'iPhone (CMAltimeter) et prévisions via WeatherKit (Apple). Ces données météo sont récupérées directement auprès d'Apple, sans passer par un serveur Holen Apps.</li>
+      <li><strong style="color:var(--text-primary)">Score MIDAS</strong> — réponses au questionnaire d'auto-évaluation et historique des scores.</li>
+      <li><strong style="color:var(--text-primary)">Préférences</strong> — seuils d'alerte pression personnalisés, paramètres de notification, état de l'onboarding.</li>
+    </ul>
+
+    <!-- 4 -->
+    <h2><span class="num">4.</span> Ce que nous ne collectons pas</h2>
+    <p>Holen Apps ne collecte <strong style="color:var(--text-primary)">aucune</strong> des données suivantes :</p>
+    <ul>
+      <li>Aucune donnée personnelle identifiante (email, téléphone, adresse)</li>
+      <li>Aucune donnée de santé (celles-ci restent sur ton appareil et dans ton iCloud privé)</li>
+      <li>Aucune donnée de localisation GPS</li>
+      <li>Aucun identifiant publicitaire</li>
+      <li>Aucune donnée d'analytics ou de télémétrie (pas de Firebase, Mixpanel, Google Analytics)</li>
+      <li>Aucun cookie ni traceur web</li>
+      <li>Aucune donnée de paiement</li>
+    </ul>
+    <div class="highlight-box">
+      <p>Sur l'App Store, MiZen déclare la catégorie <strong style="color:var(--text-primary)">« Data Not Collected »</strong>. Aucune donnée n'est collectée par le développeur ni partagée avec des tiers.</p>
+    </div>
+
+    <!-- 5 -->
+    <h2><span class="num">5.</span> Permissions et services Apple utilisés</h2>
+    <p>MiZen utilise les permissions iOS suivantes, toutes traitées localement :</p>
+    <ul>
+      <li><strong style="color:var(--text-primary)">Motion & Fitness (CMAltimeter)</strong> — lecture du capteur barométrique pour afficher la pression atmosphérique. Aucune donnée d'activité physique n'est utilisée.</li>
+      <li><strong style="color:var(--text-primary)">WeatherKit</strong> — prévisions de pression atmosphérique. Service natif Apple : la requête part directement de ton appareil vers les serveurs Apple.</li>
+      <li><strong style="color:var(--text-primary)">Notifications locales</strong> — rappels et alertes pression, entièrement gérés par iOS sans aucun service push externe.</li>
+    </ul>
+    <p>Conformément aux exigences Apple, MiZen déclare dans son fichier <em>PrivacyInfo.xcprivacy</em> les API suivantes : UserDefaults (catégorie CA92.1, raison : fonctionnalité de l'app) et File Timestamp (catégorie C617.1).</p>
+
+    <!-- 6 -->
+    <h2><span class="num">6.</span> Transferts de données</h2>
+    <p>Les seules données qui quittent ton appareil sont synchronisées vers iCloud si tu as activé cette fonctionnalité sur ton iPhone. Ce transfert est opéré par Apple, conformément à sa propre <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">politique de confidentialité</a> et aux clauses contractuelles types (SCC) encadrant les transferts UE–États-Unis.</p>
+    <p>Holen Apps n'intervient pas dans ce transfert et n'a aucun accès aux données synchronisées. Apple agit en tant que responsable de traitement pour le service iCloud et assure la conformité des transferts internationaux via les clauses contractuelles types (SCC) approuvées par la Commission européenne.</p>
+
+    <!-- 7 -->
+    <h2><span class="num">7.</span> Export PDF</h2>
+    <p>MiZen te permet de générer un rapport PDF contenant ton historique de crises, médicaments et scores MIDAS. Ce rapport est créé localement sur ton appareil et partagé via le menu de partage iOS (email, AirDrop, etc.).</p>
+    <p>Holen Apps n'a jamais accès au contenu de ce PDF. Tu es seul(e) responsable de sa diffusion.</p>
+
+    <!-- 8 -->
+    <h2><span class="num">8.</span> Suppression de tes données</h2>
+    <p>Tu gardes le contrôle total :</p>
+    <ul>
+      <li><strong style="color:var(--text-primary)">Depuis l'app</strong> — Réglages → Supprimer mes données (avec double confirmation).</li>
+      <li><strong style="color:var(--text-primary)">Désinstallation</strong> — la suppression de l'app efface automatiquement toutes les données locales.</li>
+      <li><strong style="color:var(--text-primary)">iCloud</strong> — tes données iCloud peuvent être supprimées depuis les réglages iCloud de ton iPhone.</li>
+    </ul>
+    <p>Puisque Holen Apps ne détient aucune copie de tes données, il n'y a rien à supprimer de notre côté.</p>
+
+    <!-- 9 -->
+    <h2><span class="num">9.</span> Protection des mineurs</h2>
+    <p>MiZen n'est pas destinée aux personnes de moins de 16 ans. L'application ne collecte aucune donnée, mais les informations de santé stockées localement sont de nature sensible. Si tu as entre 16 et 18 ans, nous te recommandons d'utiliser l'app avec l'accord de tes parents ou de ton représentant légal, conformément au RGPD.</p>
+
+    <!-- 10 -->
+    <h2><span class="num">10.</span> Base légale (RGPD)</h2>
+    <p>Holen Apps ne réalisant aucun traitement de données personnelles sur ses propres systèmes, la question de la base légale au sens du RGPD ne s'applique pas directement à nous. Le traitement local de tes données sur ton appareil est sous ton propre contrôle.</p>
+    <p>La synchronisation iCloud éventuelle relève du contrat entre toi et Apple, et de la politique de confidentialité d'Apple en tant que responsable de traitement de ce service.</p>
+
+    <!-- 11 -->
+    <h2><span class="num">11.</span> Tes droits</h2>
+    <p>Conformément au RGPD, tu disposes des droits d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition. Cependant, puisque Holen Apps ne détient aucune donnée te concernant, ces droits s'exercent directement sur ton appareil (consultation, modification et suppression dans l'app) ou auprès d'Apple pour les données iCloud.</p>
+    <p>Pour toute question, tu peux nous écrire à <a href="mailto:contact@holenholding.com">contact@holenholding.com</a>.</p>
+
+    <!-- 12 -->
+    <h2><span class="num">12.</span> Modifications de cette politique</h2>
+    <p>Nous pouvons mettre à jour cette politique pour refléter des évolutions de l'app ou de la réglementation. En cas de modification significative, un avis sera affiché dans l'application. La date de dernière mise à jour figure en haut de cette page.</p>
+
+    <!-- 13 -->
+    <h2><span class="num">13.</span> Contact</h2>
+    <p>Pour toute question relative à la protection de tes données :</p>
+    <ul>
+      <li>Email : <a href="mailto:contact@holenholding.com">contact@holenholding.com</a></li>
+      <li>Éditeur : SAS Holen (Holen Apps)</li>
+    </ul>
+    <p>Tu peux également introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a> (Commission nationale de l'informatique et des libertés) si tu estimes que tes droits ne sont pas respectés.</p>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">MiZen</div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="mailto:contact@holenholding.com">Contact</a>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">CGU</a>
+    </div>
+    <p class="footer-copyright">&copy; 2026 Holen Apps (SAS Holen). Fait avec amour en France.</p>
+  </footer>
+
+</body>
+</html>
